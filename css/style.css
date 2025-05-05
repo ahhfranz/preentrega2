@@ -82,7 +82,6 @@ main {
 }
 
 .product-card:hover {
-    /* --- Me fui al carajo con esto para ser un wireframe pero lo descubri y queda re fachero asi que lo deje xd --- */
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -336,4 +335,30 @@ main {
 
 .btn-enviar:hover {
     background-color: #e76161;
+}
+
+@media (max-width: 768px) {
+
+    .header,
+    .about-section,
+    .contact-container,
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }
