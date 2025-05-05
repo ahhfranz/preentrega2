@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Haven</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a class="logolink" href="../index.html"> <img src="../images/havenlogo.png" alt="Haven Logo"></a>
+        </div>
+        <nav class="nav">
+            <a href="../index.html">INICIO</a>
+            <a href="productos.html">PRODUCTOS</a>
+            <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+            <a href="politica.html">POLÍTICA DE PRIVACIDAD</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="contact-email">
+                    <img src="../icons/mail.png" alt="Email Icon" />
+                    <span>havenshop.business.argentina@gmail.com</span>
+                </div>
+                <div class="contact-map">
+                    <img src="../images/googlemaps.png" alt="Google Maps" />
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" name="nombre" required />
+
+                    <label for="correo">CORREO</label>
+                    <input type="email" id="correo" name="correo" required />
+
+                    <label for="telefono">TELÉFONO <span class="optional">(opcional)</span></label>
+                    <input type="tel" id="telefono" name="telefono" />
+
+                    <label for="mensaje">MENSAJE</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a class="map"
+            href="https://www.google.com/maps?ll=-34.574602,-58.403906&z=17&t=m&hl=es&gl=AR&mapclient=embed&cid=4156698126594736879"
+            target="_blank">
+            <img src="../images/googlemaps.png" alt="Google Maps">
+        </a>
+        <div class="payment">
+            <h3>MEDIOS DE PAGO</h3>
+            <div class="grid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="social">
+            <h3>NUESTRAS REDES</h3>
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Haven Shop - 67590 - © 2025. Todos los derechos reservados.
+    </div>
+</body>
+
+</html>
