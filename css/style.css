@@ -76,7 +76,6 @@ main {
 }
 
 .product-card:hover {
-    /* --- Me fui al carajo con esto para ser un wireframe pero lo descubri y queda re fachero asi que lo deje xd --- */
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -167,7 +166,6 @@ main {
     font-size: 14px;
 }
 
-/* --- PÁGINA 3 - POLÍTICA DE PRIVACIDAD --- */
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -211,7 +209,6 @@ main {
     border-radius: 8px;
 }
 
-/* --- PÁGINA 4 - POLÍTICA DE PRIVACIDAD --- */
 .privacy-section {
     max-width: 1000px;
     margin: 80px auto;
@@ -241,7 +238,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* --- PÁGINA 5 - CONTACTO --- */
 .contact-section {
     max-width: 1200px;
     margin: 60px auto;
@@ -332,6 +328,52 @@ main {
     background-color: #e76161;
 }
 
+.anuncios {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.anuncio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 200px;
+}
+
+.anuncio i {
+    font-size: 28px;
+    color: #333;
+}
+
+.anuncio-texto {
+    font-size: 14px;
+    color: #666;
+}
+
+.anuncio-texto strong {
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.anuncio:hover i {
+    color: #007bff;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.divisor {
+    border-left: 1px solid #aaa;
+    height: 40px;
+    align-self: center;
+}
+
 @media (max-width: 768px) {
 
     .header,
@@ -351,4 +393,29 @@ main {
         flex-direction: column;
         align-items: center;
     }
+
+    .anuncios {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .divisor {
+        display: none;
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
 }
