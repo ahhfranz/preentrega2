@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
+                <form action="https://formspree.io/f/mvgayrrv" method="POST">
                     <label for="nombre">NOMBRE</label>
                     <input type="text" id="nombre" name="nombre" required />
 
@@ -75,33 +75,35 @@
     </main>
 
     <footer class="footer">
-        <a class="map"
-            href="https://www.google.com/maps?ll=-34.574602,-58.403906&z=17&t=m&hl=es&gl=AR&mapclient=embed&cid=4156698126594736879"
-            target="_blank">
-            <img src="../images/googlemaps.png" alt="Google Maps">
-        </a>
-        <div class="payment">
-            <h3>MEDIOS DE PAGO</h3>
-            <div class="grid">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5469563558225!2d-58.40609402426854!3d-34.57459515683162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5888cbeb4d3%3A0x39b6c63a8b67648f!2sZara%20-%20Alcorta%20Shopping!5e0!3m2!1ses!2sar!4v1682383782022!5m2!1ses!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="footer-section">
+            <h3>NAVEGACIÓN</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/productos.html">Productos</a></li>
+                <li><a href="/pages/politica.html">Política de Privacidad</a></li>
+                <li><a href="/pages/sobrenosotros.html">Nosotros</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>FORMAS DE ENVÍO</h3>
+            <div class="shipping-methods">
+                <img src="../icons/correoarg.png" alt="Correo Argentino">
+                <img src="../icons/oca.png" alt="OCA">
             </div>
         </div>
-        <div class="social">
-            <h3>NUESTRAS REDES</h3>
-            <div class="circles">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+
+        <div class="footer-section">
+            <h3>CONTACTANOS</h3>
+            <p>📧 havenshop.business.argentina@gmail.com</p>
+        </div>
         </div>
     </footer>
 
@@ -109,6 +111,7 @@
         Haven Shop - 67590 - © 2025. Todos los derechos reservados.
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
